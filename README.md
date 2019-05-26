@@ -1,2 +1,2 @@
-# maximum
-A blog made in React.js/Node.js inspired by Medium
+# 2minutes
+The best space to read and write short and amazing articles
