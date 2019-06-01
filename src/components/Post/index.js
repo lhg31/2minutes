@@ -1,15 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Container } from './styles';
+import { withRouter } from 'react-router-dom';
 
-const Post = props => (
-  <Container>
-    <h2>{props.title}</h2>
-    <span>
-      por <Link to="/">{props.author}</Link>
-    </span>
-    <b>{props.date}</b>
-  </Container>
-);
+function Post(props) {
+  function inspect() {
+    props.history.push(props.url);
+  }
 
-export default Post;
+  return (
+    <Container background={props.background} onClick={() => inspect()}>
+      <h2>{props.title}</h2>
+      <span>
+        por <strong>{props.author}</strong>
+      </span>
+      <b>{props.date}</b>
+    </Container>
+  );
+}
+
+export default withRouter(Post);
