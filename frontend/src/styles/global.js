@@ -13,6 +13,11 @@ const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased !important;
         height: 100vh;
         font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(
+          90deg,
+          rgba(88, 88, 226, 1) 51%,
+          rgba(0, 212, 255, 1) 100%
+        );
     }
 `;
 

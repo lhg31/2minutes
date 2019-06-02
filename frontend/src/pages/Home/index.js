@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
-import Post from '../../components/Post';
+import Post from 'components/Post';
 
 const Home = () => (
   <Container>
@@ -27,7 +27,7 @@ const Home = () => (
     />
     <Post
       title="How to Build a Web Scraper using JavaScript"
-      author="Xandjs"
+      author="Elon Musk"
       date="15/05/2019"
       background="https://marketplace.atinternet-solutions.com/wp-content/uploads/2018/09/vuejs-1.png"
       url="/details"

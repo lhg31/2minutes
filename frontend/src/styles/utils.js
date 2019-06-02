@@ -1,28 +1,31 @@
 import styled from 'styled-components';
+import { Input } from '@rocketseat/unform';
 
-export const Input = styled.input`
+export const MInput = styled(Input)`
   margin: 5px 0;
   width: 100%;
   height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: #495057;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  border-radius: 0.45rem;
   transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
 
   &:focus {
-    box-shadow: 0 0 10px #7ab9fb;
+    border: 2px solid #7ab9fb;
+    box-shadow: 0 0 20px #7ab9fb;
   }
 `;
 
-export const Button = styled.button`
+export const MButton = styled.button`
   cursor: pointer;
   font-size: 18px;
-  padding: 15px;
+  min-height: 50px;
+  padding: 10px;
   border: none;
   border-radius: 10px;
   transition: all 0.3s ease;
